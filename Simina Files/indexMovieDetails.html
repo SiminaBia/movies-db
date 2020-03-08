@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleMovieDetails.css" rel="stylesheet" type="text/css" />
+    <title>Movie Details</title>
+</head>
+<body>
+    <header>
+        HEADER
+    </header>
+    <div class="MoviePage flex-directions">
+        <div class="MoviePicture">
+            <img src="https://m.media-amazon.com/images/M/MV5BMzIxMDkxNDM2M15BMl5BanBnXkFtZTcwMDA5ODY1OQ@@._V1_SX300.jpg" id="MoviePoster" class="MovieResponsiveImg" alt="Movie" >
+        </div>
+        <div class="MovieDetails">
+            <div id="MovieTitle"><h2>Title:  </h2></div>
+            <div id="MovieYear"> <p>Year:    </p> </div>
+            <div id="MovieGenre"> <p>Genre:  </p>  </div>
+            <div id="MovieLanguage"><p>Language:</p> </div>            
+            <div id="MovieCountry"><p>Country: </p> </div>
+           <div id="MovieRuntime" > <p>Runtime: </p>  </div>
+        </div>
+        <div>
+            <button type="button" class="movieBtn" id="AddMovieButton" onclick="AddMovie()">ADD MOVIE</button>
+            <button type="button" class="movieBtn" id="EditMovieButton" onclick="EditMovie()">EDIT MOVIE</button>
+            <button type="button" class="movieBtn" id="DeleteMovieButton" onclick="DeleteMovie()">DELETE MOVIE</button>
+        </div>
+    </div>
+    <script src="appMovieDetails.js"></script>
+</body>
+</html>
