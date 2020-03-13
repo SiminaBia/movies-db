@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+*{
+    box-sizing: border-box;   
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	outline:none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+	height: 100vh;
+	background: rgb(2, 0, 36);
+	background: radial-gradient(
+		circle,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(9, 9, 121, 0.9836309523809523) 35%,
+		rgba(0, 212, 255, 1) 100%
+	);
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+    margin: 0.5rem;
+  
+}
+
+.project-title {
+	position: absolute;
+	left: 5px;
+}
+
+.MoviePage {
+    margin-top: 1rem;
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 25rem;
+    flex-wrap:wrap;
+    margin: auto;
+    width: 55%;
+    padding: 1rem;
+    background: rgb(2, 0, 36);
+	background: radial-gradient(
+		circle,
+        rgba(2, 0, 36, 1) 0%,
+		rgba(9, 9, 121, 0.9836309523809523) 35%,
+		rgba(0, 212, 255, 1) 100%
+	);
+}
+
+.flex-directions{
+    flex-direction:row;
+  }
+
+.MoviePicture { 
+    display: inline-block; 
+    width: 25rem;
+    height: 35rem;
+   
+    display: flex;
+    align-items: center;
+        
+}
+
+
+.MovieDetails {
+    overflow:hidden;
+    justify-content: space-between;
+    width: 25rem;
+    min-height: 20rem;
+    height: 35rem;
+    margin:1rem;
+    color: white;
+}
+
+@media screen and (max-width: 400px) {
+    .flex-direction{
+        flex-direction:column;
+        }
+    
+ }
+
+
+#MovieTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    display: inline;
+}
+
+p {
+    font-size: 1.5rem;
+    display: flex;
+    display: inline;
+}
+
+#MovieYear, 
+#MovieGenre,
+#MovieLanguage,
+#MovieRuntime,
+#MovieCountry {
+font-size: 1.5rem;
+padding-bottom: 0.5rem;
+}
+
+.MovieResponsiveImg {
+   /*  width: 22rem;
+    height: 33rem; */
+
+    width: 100%;
+    max-width:22rem;
+    height: auto;
+    margin-left:auto;
+   }
+   
+   .movieBtn {
+       font-size: medium;
+       font-weight: bold;
+       color: white;
+       background-color: rgb(26, 25, 25);
+       border:none;
+       height: 3rem;
+       margin: 1rem;
+       text-align: center;
+       padding:0 0.5rem;
+      
+   }
